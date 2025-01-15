@@ -8,4 +8,4 @@ pnpm - 8.15.3
 
 ## Preview
 
-![Preview](./src/assets/img/preview.png)
+![Preview](preview.png)
