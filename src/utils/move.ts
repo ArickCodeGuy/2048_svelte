@@ -1,8 +1,8 @@
-import type { CellGridCells } from '@/components/CellGrid/types';
-import type { Movement } from '@/composables/type';
+import type { Movement } from '@/composables/types';
 import { initCellGrid } from './initCellGrid';
 import { copyGridCells } from './copyGridCells';
 import { positionToKey } from './positionToKey';
+import type { CellGridCells } from '@/store/game/types';
 
 export type Direction = 'UP' | 'DOWN' | 'LEFT' | 'RIGHT';
 

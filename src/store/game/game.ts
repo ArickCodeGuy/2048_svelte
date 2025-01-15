@@ -1,7 +1,7 @@
-import type { CellGridCells } from '@/components/CellGrid/types';
 import { writable } from 'svelte/store';
 import { LOCAL_STORAGE_KEY, useLocalGame } from './useLocalGame';
 import { initCellGrid } from '@/utils/initCellGrid';
+import type { CellGridCells } from './types';
 
 export type State = {
   grid: CellGridCells;

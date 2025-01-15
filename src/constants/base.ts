@@ -1,4 +1,4 @@
-export const BASE_PATH = '/2048';
+export const BASE_PATH = '/2048_svelte';
 
 export const CELL_BLANK_COLOR = '#000';
 

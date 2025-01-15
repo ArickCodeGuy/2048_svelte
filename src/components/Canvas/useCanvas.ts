@@ -1,4 +1,4 @@
-import type { Movement } from '@/composables/type';
+import type { Movement } from '@/composables/types';
 import { CELL_NUMBER_DICTIONARY } from '@/constants/base';
 import { game, type State } from '@/store/game/game';
 

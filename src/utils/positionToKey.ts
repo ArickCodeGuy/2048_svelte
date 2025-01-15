@@ -1,4 +1,4 @@
-import type { Movement } from '@/composables/type';
+import type { Movement } from '@/composables/types';
 
 export function positionToKey([x, y]: Movement): string {
   return `${x},${y}`;

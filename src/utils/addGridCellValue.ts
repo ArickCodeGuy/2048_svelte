@@ -1,4 +1,4 @@
-import type { CellGridCells } from '@/components/CellGrid/types';
+import type { CellGridCells } from '@/store/game/types';
 import { randomItemFromArray } from './randomItemFromArray';
 
 export function addGridCellValue(grid: CellGridCells): void {

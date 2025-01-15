@@ -1,10 +1,13 @@
 <script lang="ts">
 import Canvas from './components/Canvas/Canvas.svelte';
 import Controls from './components/Controls/Controls.svelte';
+import GameOver from './components/GameOver/GameOver.svelte';
 import Header from './components/Header/Header.svelte';
-import { initGame } from './composables/game';
+import { initGame } from './composables/game/game';
+import { isGameOver } from './composables/game/utils/canMove';
 import { useDelayedNumberUpdate } from './composables/useDelayedNumberUpdate';
 import { game, restartGame } from './store/game/game';
+import { pushPopup } from './store/popups/popups';
 import Popups from './store/popups/Popups.svelte';
 
 initGame();
@@ -15,6 +18,14 @@ const [updateScore] = useDelayedNumberUpdate(0, {
 });
 $effect(() => {
   updateScore($game.score);
+});
+
+game.subscribe((v) => {
+  if (isGameOver(v.grid)) {
+    pushPopup({
+      component: GameOver,
+    });
+  }
 });
 </script>
 

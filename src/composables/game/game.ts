@@ -1,5 +1,5 @@
-import type { CellGridCells } from '@/components/CellGrid/types';
 import { game, type State } from '@/store/game/game';
+import type { CellGridCells } from '@/store/game/types';
 import { addGridCellValue } from '@/utils/addGridCellValue';
 import { isGridsEqual } from '@/utils/isGridsEqual';
 import { move, type Direction } from '@/utils/move';

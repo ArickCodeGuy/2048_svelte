@@ -7,7 +7,7 @@ import { closePopup, popups } from './popups';
     <!-- svelte-ignore a11y_click_events_have_key_events a11y_no_static_element_interactions -->
     <div class="Popup" on:click={() => closePopup(popup.id)}>
       <div class="Popup-content" on:click|stopPropagation={() => null}>
-        <svelte:component this={popup.component} />
+        <svelte:component this={popup.component} props={popup.props} />
 
         <button class="Popup-close" on:click={() => closePopup(popup.id)}
           >X</button
