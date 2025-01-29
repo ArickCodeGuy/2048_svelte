@@ -2,13 +2,14 @@ import { resolve as pathResolve } from 'path';
 import { svelte } from '@sveltejs/vite-plugin-svelte';
 import { defineConfig } from 'vite';
 import { BASE_PATH } from './src/constants/base';
-import eslint from 'vite-plugin-eslint';
+// @@TODO
+// import eslint from 'vite-plugin-eslint';
 
 const resolve = (path: string) => pathResolve(__dirname, path);
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [svelte(), eslint()],
+  plugins: [svelte()],
   base: BASE_PATH,
   build: {
     rollupOptions: {

@@ -1,4 +1,4 @@
-@import '@/assets/styles/vars.scss';
+@use 'vars';
 
 :root {
   color-scheme: dark;
@@ -127,7 +127,7 @@ button {
   border: none;
   border-radius: 3px;
   padding: 2px;
-  @media (min-width: $breakpoint-lg) {
+  @media (min-width: vars.$breakpoint-lg) {
     padding: 5px;
   }
 }
@@ -287,27 +287,27 @@ img {
   .col-#{$i} {
     width: calc($i * 100% / 12);
   }
-  @media (min-width: $breakpoint-sm) {
+  @media (min-width: vars.$breakpoint-sm) {
     .col-sm-#{$i} {
       width: calc($i * 100% / 12);
     }
   }
-  @media (min-width: $breakpoint-md) {
+  @media (min-width: vars.$breakpoint-md) {
     .col-md-#{$i} {
       width: calc($i * 100% / 12);
     }
   }
-  @media (min-width: $breakpoint-lg) {
+  @media (min-width: vars.$breakpoint-lg) {
     .col-lg-#{$i} {
       width: calc($i * 100% / 12);
     }
   }
-  @media (min-width: $breakpoint-xl) {
+  @media (min-width: vars.$breakpoint-xl) {
     .col-xl-#{$i} {
       width: calc($i * 100% / 12);
     }
   }
-  @media (min-width: $breakpoint-xxl) {
+  @media (min-width: vars.$breakpoint-xxl) {
     .col-xxl-#{$i} {
       width: calc($i * 100% / 12);
     }

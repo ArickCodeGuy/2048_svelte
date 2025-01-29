@@ -1,3 +1,5 @@
+<script lang="ts"></script>
+
 <h2 class="h2">Controls</h2>
 <div class="controls-container">
   <div class="controls">

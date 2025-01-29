@@ -44,7 +44,7 @@ game.subscribe((v) => {
         </p>
       </div>
       <div class="col-lg-4 right">
-        <h2 class="h2">Score: {score}</h2>
+        <h2 class="heading">Score: {score}</h2>
       </div>
     </div>
   </div>
@@ -53,34 +53,16 @@ game.subscribe((v) => {
 <Popups />
 
 <style lang="scss">
-@import '@/assets/styles/vars.scss';
+@use '@/assets/styles/vars';
 
-.h1,
-.h2 {
+.heading {
   text-align: center;
-}
-.CellGridWrapper {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  z-index: 1;
-  user-select: none;
-}
-.CellGridBackground {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  z-index: -1;
 }
 .right {
   text-align: center;
 }
 
-@media (max-width: $breakpoint-lg) {
+@media (max-width: vars.$breakpoint-lg) {
   .left {
     display: none;
   }
