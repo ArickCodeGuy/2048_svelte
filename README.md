@@ -4,7 +4,8 @@
 
 ## Versions
 
-pnpm - 8.15.3
+- Node - v18.13.0
+- pnpm - 8.15.3
 
 ## Preview
 
